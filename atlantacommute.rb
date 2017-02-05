@@ -149,8 +149,10 @@ user_input = gets
 
 #get pulled over. Police takes your name. you move on with your day
 puts "OFFICER: Hello there. License and registration please. what\'s your name?"
+puts "Please type your name below."
 name = gets
-puts "OFFICER: Hi " + name.chomp! + ". Do you know how fast you were goin'?"
+puts "OFFICER: Hi " + name.chomp! + ". Do you know what speed you were goin'?"
+puts "Please enter a number."
 answer = gets
 mph = 20 + Random.rand(100)
 puts "OFFICER: " + answer.chomp! + " miles per hour?!? It was more like " + mph.to_s + " !"
@@ -158,13 +160,14 @@ user_input = gets
 puts "OFFICER: Okay, " + name + " here is your ticket. You have a lovely day now."
 puts "..."
 timelost = 20 + Random.rand(10)
-puts "SIRI: " + name + " ,you have lost " + timelost.to_s + " minutes."
+puts "SIRI: " + name + " , you have lost " + timelost.to_s + " minutes."
 user_input = gets
 puts "You are running late as it is. But there is a Starbucks right ahead."
 puts "You pull in. Might as well, it's not even 9am and your emotions have already had quite the roller coaster."
 
 #You stop to get coffee. 
 puts "BARISTA: What'll ya have?"
+puts "Please enter your coffee order."
 coffee = gets.chomp
 puts "Order up! Your " + coffee + " will be ready at the bar."
 minutes = 20 + Random.rand(20)
@@ -175,6 +178,7 @@ puts "...."
 puts "You finally pull into the company parking lot. It is 9:05am."
 user_input = gets
 puts "Game over."
+
 
 
 
